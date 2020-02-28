@@ -1,5 +1,8 @@
 import React from 'react';
 
+import List from './components/list/List';
+import Detail from './components/detail/Detail';
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.scss';
 
@@ -7,9 +10,9 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component></Route>
-        <Route exact path="/:id" component></Route>
-        <Route exact path="/producto:id" component></Route>
+        <Route exact path="/" component={List} />
+        <Route exact path="/:search" component={List} />
+        <Route exact path="/product/:id" component={Detail} />
       </Switch>
     </Router>
   );
