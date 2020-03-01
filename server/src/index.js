@@ -1,9 +1,14 @@
-import express from 'express';
+const express = require('express');
+const listController = require('./controllers/listController');
+const detailController = require('./controllers/detailController');
 
 const app = express();
+const SECRET = "MBcth9c9ZDiINBMjUZQH3Mmk2ET99vDL";
+const PORT = 3000;
 
-const PORT = process.env.PORT || 4000;
+app.listen(PORT, () => {
+  console.log(`Servidor funcionando correctamente en el puerto ${PORT}`);
+});
 
-import listController from './controllers/listController';
-
-console.log("Index: ", listController);
+app.get('/api/items', listController);
+app.get('/api/items/:id', detailController);
