@@ -6,8 +6,8 @@ const Form = () => {
 
   const placeholder = "No dejes nunca de buscar";
   return ( 
-    <form className="form">
-      <input className="form__input" type="text" placeholder={placeholder}></input>
+    <form className="form" action="/items">
+      <input className="form__input" type="text" id="search" name="search" placeholder={placeholder}></input>
       <button type="submit" className="form__submit"><FaSearch></FaSearch></button>
     </form>
   );

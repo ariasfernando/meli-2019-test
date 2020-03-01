@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+
+.results {
+  &__list {
+    margin: 0 3.25rem;
+    display: flex;
+    flex-direction: column;
+  
+    @media(min-width: $breakpoint-desktop) {
+      margin: 0 auto;
+      width: $breakpoint-desktop;
+    }
+  }
+}
