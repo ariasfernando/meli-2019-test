@@ -1,3 +1,11 @@
+@import './styles/variables';
+
 body {
+  margin: 0;
+  background-color: $color-bg;
+}
+
+body, input {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: $color-text;
 }
