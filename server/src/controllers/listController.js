@@ -1,7 +1,7 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
-module.exports = function ListController(req, res) {
-  fetch(`https://api.mercadolibre.com/sites/MLA/search?q=${req.query.q}`)
+export default function ListController(req, res) {
+  fetch(`${process.env.BACKEND_URI}sites/MLA/search?q=${req.query.q}`)
     .then(res => res.json())
-    .then(json => res.send(json))
-};
+    .then(json => res.send(json));
+}

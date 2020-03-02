@@ -8,10 +8,12 @@ import Results from './components/results/Results';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
+  console.log(process.env);
   return (
     <Fragment>
       <Router>
         <Header />
+        <p>{ process.env.REACT_APP_BACKEND_PORT }</p>
         <Switch>
           <Route exact path="/items" component={Results} />
           <Route exact path="/items/:id" component={Detail} />

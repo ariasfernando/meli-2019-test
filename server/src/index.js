@@ -1,10 +1,13 @@
-const express = require('express');
-const listController = require('./controllers/listController');
-const detailController = require('./controllers/detailController');
+import express from 'express';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+import listController from './controllers/listController';
+import detailController from './controllers/detailController';
 
 const app = express();
-const SECRET = "MBcth9c9ZDiINBMjUZQH3Mmk2ET99vDL";
-const PORT = 3000;
+const PORT = process.env.BACKEND_PORT;
 
 app.listen(PORT, () => {
   console.log(`Servidor funcionando correctamente en el puerto ${PORT}`);
