@@ -1,69 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# Test MercadoLibre | 
 
-In the project directory, you can run:
+Autor: Fernando Arias [fernandorafaelarias@gmail.com](mailto:fernandorafaelarias@gmail.com)
 
-### `npm start`
+Este proyecto incluye:
+* Front-end desarrollado con React.js.
+* Back-end desarrollado con Node.js
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Up and Running
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Instalación
 
-### `npm test`
+Luego de desacargar el proyecto, es necesario instalar las librerías, para eso se puede usar el comando:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm run installer
+```
 
-### `npm run build`
+Este comando realiza una instalación de las librerías para el backend seguido de las librerías de front-end.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Back-end
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Para levantar el backend, se debe correr:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm run server
+```
 
-### `npm run eject`
+Que realizará la transpilación a ES5 de los archivos del servidor y lo levantará.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Front-end
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para levantar el front, se debe correr en una nueva ventana:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm run client
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Simplemente llama al comando `npm start` de `create-react-app`. Si el puerto 3000 (por default) se encuentra en uso, consultará por otro disponible, esto no afectará al uso de la aplicación.
 
-## Learn More
+## Puertos
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Tanto en el root del proyecto como en la carpeta `/client` se encuentran dos archivos `.env` con las respectivas variables:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* `BACKEND_PORT=8626` para configurar el puerto en donde correrá el backend.
+* `REACT_APP_BACKEND_PORT=8626` para indicar al front-end en qué puerto se encuentra la instancia de back-end.
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-# test-2020-meli
+Si el puerto se encuentra en uso, es necesario cambiarlo en ambos archivos, desde luego coincidiendo.
