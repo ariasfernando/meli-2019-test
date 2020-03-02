@@ -1,0 +1,23 @@
+{
+  "name": "test-2020-meli",
+  "version": "1.0.0",
+  "description": "Test challenge for MercadoLibre",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ariasfernando/test-2020-meli.git"
+  },
+  "author": "Fernando Arias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ariasfernando/test-2020-meli/issues"
+  },
+  "homepage": "https://github.com/ariasfernando/test-2020-meli#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-open": "^3.0.1"
+  }
+}
