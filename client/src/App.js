@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-
 import Header from './components/common/header/Header';
 
 import Detail from './components/detail/Detail';
@@ -7,8 +6,11 @@ import Results from './components/results/Results';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
+import Search from '../../models/Search';
+
 function App() {
-  console.log(process.env);
+  let search = new Search();
+  console.log(search);
   return (
     <Fragment>
       <Router>
