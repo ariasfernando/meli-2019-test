@@ -1,0 +1,26 @@
+@import '../../../styles/variables';
+
+.error {
+
+  &__box {
+    margin: 2rem 3.25rem;
+    padding: 1rem;
+    display: flex;
+    background-color: $color-white;
+    align-items: center;
+
+    @media(min-width: $breakpoint-desktop) {
+      margin: 2rem auto;
+      width: $breakpoint-desktop;
+    }
+  }
+  
+  &__image {
+    flex-shrink: 0;
+  }
+
+  &__message{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+}

@@ -10,16 +10,20 @@ export default class Data {
   static getResults( search ) {
     let endpoint = `${Data.URL()}?q=${search}`;
     return fetch(endpoint)
+      .catch( () => {
+        throw new Error() 
+      })
       .then( res => res.json())
       .then( res => Object.assign(new Search(), res) )
-      .catch( err => console.log(err) );
   }
 
   static getItem( id ){
     let endpoint = `${Data.URL()}/${id}`;
     return fetch(endpoint)
+      .catch( () => {
+        throw new Error()
+      })
       .then( res => res.json())
       .then( res => Object.assign(new Item(), res) )
-      .catch( err => console.log(err) );
   }
 }

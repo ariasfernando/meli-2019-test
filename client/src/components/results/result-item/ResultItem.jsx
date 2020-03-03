@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import FreeShipping from './free-shipping/FreeShipping';
+import FreeShipping from '../../common/free-shipping/FreeShipping';
 
 import './ResultItem.scss';
 

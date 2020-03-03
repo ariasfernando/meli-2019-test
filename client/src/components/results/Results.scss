@@ -3,8 +3,7 @@
 .results {
   &__list {
     margin: 0 3.25rem;
-    display: grid;
-    grid-template-columns: repeat(3ltr);
+    display: flex;
     flex-direction: column;
   
     @media(min-width: $breakpoint-desktop) {
