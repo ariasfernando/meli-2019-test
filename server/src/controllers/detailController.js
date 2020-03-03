@@ -8,4 +8,4 @@ export default function DetailController(req, res) {
   ]).then( data => Factory.createItemFromAPI(data) )
     .then( item => res.send(item) )
     .catch( () => res.status(404).send('El item no existe'));
-};
+}

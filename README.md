@@ -1,5 +1,5 @@
 
-# Test MercadoLibre | 
+# Test MercadoLibre Front-end
 
 Autor: Fernando Arias [fernandorafaelarias@gmail.com](mailto:fernandorafaelarias@gmail.com)
 
@@ -17,7 +17,7 @@ Luego de desacargar el proyecto, es necesario instalar las librerías, para eso 
 npm run installer
 ```
 
-Este comando realiza una instalación de las librerías para el backend seguido de las librerías de front-end.
+Este comando realiza una instalación de las librerías para el back-end seguido de las librerías de front-end.
 
 ### Back-end
 
@@ -46,4 +46,4 @@ Tanto en el root del proyecto como en la carpeta `/client` se encuentran dos arc
 * `BACKEND_PORT=8626` para configurar el puerto en donde correrá el backend.
 * `REACT_APP_BACKEND_PORT=8626` para indicar al front-end en qué puerto se encuentra la instancia de back-end.
 
-Si el puerto se encuentra en uso, es necesario cambiarlo en ambos archivos, desde luego coincidiendo.
+Si el puerto se encuentra en uso, es necesario cambiarlo en ambos archivos, desde luego coincidiendo, y luego reiniciando las instancias de front y back.
