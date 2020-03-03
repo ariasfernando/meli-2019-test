@@ -6,11 +6,7 @@ import Results from './components/results/Results';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Search from '../../models/Search';
-
 function App() {
-  let search = new Search();
-  console.log(search);
   return (
     <Fragment>
       <Router>
