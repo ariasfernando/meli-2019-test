@@ -11,15 +11,15 @@ const ResultItem = ({ product }) => {
   return (
     <article className="result-item">
       <Link to={`/items/${id}`} className ="result-item__image">
-        <img src={picture} />
+        <img src={picture} alt={title} />
       </Link>
       <div>
         <Link to={`/items/${id}`}>
           <h2 className ="result-item__title">{ title }</h2>
         </Link>
         <span className="result-item__price">
-          { `${price.currency} ${price.amount}`}
-          <sup>{price.decimals}</sup>
+          { `${(price.currency === 'ARS') ? 'AR$' : '$'} ${price.amount}`}
+          <sup>{ (price.decimals > 0) ? price.decimals : ''}</sup>
         </span>
         { free_shipping ? <FreeShipping /> : '' }
       </div>

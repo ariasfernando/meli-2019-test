@@ -7,4 +7,5 @@ export default class Search {
     this.categories = categories;
     this.items = items;
   }
+
 }

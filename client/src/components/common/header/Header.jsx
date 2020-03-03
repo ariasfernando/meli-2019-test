@@ -10,7 +10,7 @@ function Header() {
   return(
     <header className="header">
       <Link to="/" className="header__logo">
-        <img src={ logo } />
+        <img src={ logo } alt="Mercado Libre!" />
       </Link>
       <Form />
     </header>

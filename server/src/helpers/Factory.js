@@ -8,8 +8,10 @@ export default class Factory {
     search.items = [...response.results.slice(0,4)].map( result => {
       return this.createItemFromAPI([ result ]);
     });
-    for( let category of response.filters[0].values[0].path_from_root){
-      search.categories.unshift( category.name );
+    if(response.filters.length > 0) {
+      for( let category of response.filters[0].values[0].path_from_root){
+        search.categories.unshift( category.name );
+      }
     }
     return search;
   }

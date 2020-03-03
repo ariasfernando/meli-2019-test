@@ -3,6 +3,7 @@ import Factory from './../helpers/Factory';
 
 export default function ListController(req, res) {
   fetch(`${process.env.BACKEND_URI}sites/MLA/search?q=${req.query.q}`)
+    .catch( err => console.log(err))
     .then(res => res.json())
     .then( data => {
       if (data.results.length === 0) { 
@@ -13,5 +14,8 @@ export default function ListController(req, res) {
     })
     .then(data => Factory.createSearchListFromAPI(data))
     .then(json => res.send(json))
-    .catch( message => res.status(404).send(message));
+    .catch( (message, error) => { 
+      res.status(404).send(message);
+      console.log(message, error);
+    });
 }
