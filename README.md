@@ -5,7 +5,12 @@ Autor: Fernando Arias [fernandorafaelarias@gmail.com](mailto:fernandorafaelarias
 
 Este proyecto incluye:
 * Front-end desarrollado con React.js.
-* Back-end desarrollado con Node.js
+* Back-end desarrollado con Node.js.
+
+## Requisitos
+
+* Instalar la última versión de Node.js
+* Instalar el package `create-react-app` de manera global.
 
 ## Up and Running
 
